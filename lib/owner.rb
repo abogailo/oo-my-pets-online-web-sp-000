@@ -23,7 +23,7 @@ class Owner
     "I am a #{@species}."
   end
 
-  def count
+  def self.count
     @@all.size
   end
 end
