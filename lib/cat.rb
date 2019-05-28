@@ -1,8 +1,8 @@
 class Cat
   # code goes here
-  attr_accessor :NAME
-  def initialize(NAME)
-    @NAME =NAME
+  attr_accessor :name
+  def initialize(name)
+    @name = NAME
   end
 
 end
