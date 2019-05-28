@@ -27,9 +27,9 @@ class Owner
     @@all.size
   end
 
+  def buy_fish(fish_name)
+  @pets[:fishes] << Fish.new(fish_name)
+end
   def list_pets
-    "I have #{@pets[:fishes].count} fish,
-     #{@pets[:dogs].count} dog(s), and
-     #{@pets[:cats].count} cat(s)."
   end
 end
