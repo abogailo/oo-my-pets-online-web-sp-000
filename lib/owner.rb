@@ -56,7 +56,7 @@ class Owner
       fishy.mood = "happy"
     end
   end
-  
+
   def list_pets
   end
 end
