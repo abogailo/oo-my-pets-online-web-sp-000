@@ -52,9 +52,18 @@ class Owner
   end
 
    def feed_fish
-    @pets[:fishes].collect do |fishy|
-      fishy.mood = "happy"
+    @pets[:fishes].collect do |fish|
+      fish.mood = "happy"
     end
+  end
+
+  def sell_pets
+    @pets.collect do |species, animals|
+      animals.collect do |animal|
+        animal.mood = "nervous"
+      end
+    end
+    @pets = {}
   end
 
   def list_pets
